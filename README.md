@@ -2,12 +2,18 @@
 
 Algorithmic trading bot for Binance exchange which uses Talib indicators
 
-## Installation
 
-### Requirements
+###DISCLAIMER
+
+I am not responsible for any money you lose with this bot. Use it at your own risk.
+
+### Installation
+
+## Requirements
 * python
 * TA-Lib
 `$ pip install TA-Lib`
+
 
 ## Usage
 
@@ -18,7 +24,31 @@ You should insert your Binance API Key and Secret into binance_bot/account_info 
 'API Secret'
 ```
 
+Put currencies you would like to trade into coins array
+
+```
+coins = ['ETHBTC', 'LTCBTC', 'BNBBTC', 'NEOBTC', 'BCCBTC', 'GASBTC']
+```
+Put maximum money you would like to spend per currency into maxSpendInBTC.
+```
+maxSpendInBTC = 0.002
+```
+
+Put maximum number of currencies you would like to trade into maxNumberOfCurrencies
+```
+maxNumberOfCurrencies = 15
+```
+
+Select the time interval for your technical analysis
+```
+interval = ["15m"]
+```
+
+Run the bot.py to start the bot.
+
 Current strategy uses the combination of John Carter's Squeeze Momentum and Welles Wilder's Relative Strength Index
+
+
 
 ## Donate
 
