@@ -6,7 +6,6 @@ import talib as talib
 import talib.abstract as tb
 from binance.client import Client
 
-
 class Bot:
     coins = ['ETHBTC', 'LTCBTC', 'BNBBTC', 'NEOBTC', 'BCCBTC', 'GASBTC', 'HSRBTC', 'MCOBTC', 'WTCBTC', 'LRCBTC',
              'QTUMBTC', 'YOYOBTC', 'OMGBTC', 'ZRXBTC', 'STRATBTC', 'SNGLSBTC', 'BQXBTC', 'KNCBTC', 'FUNBTC', 'SNMBTC',
@@ -183,3 +182,6 @@ class Bot:
         lowerKC = ma - rangema * mult
         return upperKC[len(upperKC) - 1], lowerKC[len(lowerKC) - 1], upperKC[len(upperKC) - 2], lowerKC[
             len(lowerKC) - 2]
+
+bot = Bot()
+bot.run()
