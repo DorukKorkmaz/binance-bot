@@ -2,12 +2,11 @@
 
 Algorithmic trading bot for Binance exchange which uses Talib indicators
 
-
-###DISCLAIMER
+##DISCLAIMER
 
 I am not responsible for any money you lose with this bot. Use it at your own risk.
 
-### Installation
+## Installation
 
 ## Requirements
 * python
@@ -47,8 +46,6 @@ interval = ["15m"]
 Run the bot.py to start the bot.
 
 Current strategy uses the combination of John Carter's Squeeze Momentum and Welles Wilder's Relative Strength Index
-
-
 
 ## Donate
 
